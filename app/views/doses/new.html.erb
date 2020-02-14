@@ -1,0 +1,19 @@
+<h1>New ingredient</h1>
+ <div class="bubble bubble--2"></div>
+    <div class="bubble bubble--3"></div>
+    <div class="bubble bubble--4"></div>
+    <div class="bubble bubble--5"></div>
+    <div class="bubble bubble--6"></div>
+    <div class="bubble bubble--7"></div>
+    <div class="bubble bubble--8"></div>
+    <div class="bubble bubble--9"></div>
+    <div class="bubble bubble--10"></div>
+    <div class="bubble bubble--11"></div>
+    <div class="bubble bubble--12"></div>
+<div class="container">
+  <%= simple_form_for([@cocktail, @dose]) do |f|%>
+    <%= f.association :ingredient %>
+    <%= f.input :description %>
+    <%= f.submit "Ajouter ingrédient", class: "btn btn-primary" %>
+  <% end %>
+</div>

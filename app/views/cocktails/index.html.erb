@@ -1,0 +1,36 @@
+<h1 class = "card-title">Mes Cocktails</h1>
+<div class = "container">
+  <%= link_to "+", new_cocktail_path, class:"new-cocktail" %>
+    <div class= "row">
+        <% @cocktails.each do |cocktail| %>
+          <div class = "col-sm-12 col-lg-6">
+            <ul>
+              <div class = "card-body">
+                        <%= link_to cocktail do %>
+                        <%= image_tag "cocktail.png", alt: "Cocktail", class: "img-round" %>
+                        <div class="border-bottom border-primary image-width">
+                          <%= cocktail.name %>
+                        </div>
+                        <% end %>
+                      <div class="bubble bubble--1"></div>
+                      <div class="bubble bubble--2"></div>
+                      <div class="bubble bubble--3"></div>
+                      <div class="bubble bubble--4"></div>
+                      <div class="bubble bubble--5"></div>
+                      <div class="bubble bubble--6"></div>
+                      <div class="bubble bubble--7"></div>
+                      <div class="bubble bubble--8"></div>
+                      <div class="bubble bubble--9"></div>
+                      <div class="bubble bubble--10"></div>
+                      <div class="bubble bubble--11"></div>
+                      <div class="bubble bubble--12"></div>
+              </div>
+            </ul>
+          </div>
+        <% end %>
+    </div>
+
+</div>
+
+<!-- cocktail_doses_path(cocktail.id)
+<%= image_tag "cocktail.png", alt: "Cocktail", class: "img-round" %> -->
